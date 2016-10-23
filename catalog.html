@@ -22,7 +22,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li class="selected">
-              <a href="#">Магазин</a>
+              <a>Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -44,92 +44,107 @@
           <a href="#">Магазин</a>
         </li>
         <li>
-          <a href="#">Средства для ухода</a>
+          <a>Средства для ухода</a>
         </li>
       </ul>
-      <div class="catalog-filters">
-      	<form name="filters" action="/catalog.html" method="get">
-          <h3>Производители:</h3>
-          <input type="checkbox" name="producer-baxter" value="baxter" checked> Baxter of California<br>
-          <input type="checkbox" name="producer-mrnatty" value="mrnatty"> MR Natty<br>
-          <input type="checkbox" name="producer-suavecito" value="suavecito" checked> Suavecito<br>
-          <input type="checkbox" name="producer-malingoetz" value="malingoetz"> Malin+Goetz<br>
-          <input type="checkbox" name="producer-murrays" value="murrays"> Murray's<br>
-          <input type="checkbox" name="producer-americancrew" value="americancrew" checked> American Crew
-          <h3>Группы товаров:</h3>
-          <input type="radio" name="good-groups" value="shaving"> Бритвенные принадлежности<br>
-          <input type="radio" name="good-groups" value="care" checked> Средства для ухода<br>
-          <input type="radio" name="good-groups" value="accessories"> Аксессуары<br>
-          <button type="submit" class="filters-button">Показать</button>
-        </form>
-      </div>
-      <div class="catalog-goods">
-      	<table>
-          <tr>
-          	<td>
-              <figure>
-                <img src="/catalog/img1.jpg" width="300" height="200" alt="Набор для путешествий &quot;BAXTER OF CALIFORNIA&quot;">
-              	<figcaption>Набор для путешествий &laquo;BAXTER OF CALIFORNIA&raquo;</figcaption>
-              </figure>  
+      <div class="wrapper">
+        <div class="catalog-filters">
+          <form name="filters" action="/catalog.html" method="get">
+            <h3>Производители:</h3>
+            <div class="wrapper-input">
+            	<input type="checkbox" name="producer-baxter" value="baxter" checked> Baxter of California
+            </div>
+            <div class="wrapper-input">
+            	<input type="checkbox" name="producer-mrnatty" value="mrnatty"> MR Natty
+            </div>
+            <div class="wrapper-input">
+            	<input type="checkbox" name="producer-suavecito" value="suavecito" checked> Suavecito
+            </div>
+            <div class="wrapper-input">
+	            <input type="checkbox" name="producer-malingoetz" value="malingoetz"> Malin+Goetz
+            </div>
+            <div class="wrapper-input">
+            	<input type="checkbox" name="producer-murrays" value="murrays"> Murray's
+            </div>
+            <div class="wrapper-input">
+            	<input type="checkbox" name="producer-americancrew" value="americancrew" checked> American Crew
+            </div>
+            <h3>Группы товаров:</h3>
+            <div class="wrapper-input">
+            	<input type="radio" name="good-groups" value="shaving"> Бритвенные принадлежности
+            </div>
+            <div class="wrapper-input">
+            	<input type="radio" name="good-groups" value="care" checked> Средства для ухода
+            </div>
+            <div class="wrapper-input">
+            	<input type="radio" name="good-groups" value="accessories"> Аксессуары
+            </div>
+            <button type="submit" class="filters-button">Показать</button>
+          </form>
+        </div>
+        <div class="catalog-goods">
+          <article class="catalog-goods-item">
+              <div class="catalog-goods-item-description">
+                <a href="#"><img src="/catalog/img1.jpg" width="300" height="200" alt="Набор для путешествий &#171;BAXTER OF CALIFORNIA&#187;"></a>
+                <!--Согласно спецификации "3.14 Карточка товара: название товара — это ссылка на страницу товара (название состоит из двух строк, но по сути является одним блоком)" - использование <br> в <figcaption> будет оправдано?-->
+              	<h2><a href="#">Набор для путешествий <br>&#171;BAXTER OF CALIFORNIA&#187;</a></h2>
+              </div>  
               <div class="price">
                 <span>2 900 руб.</span><a href="#">Купить</a>
               </div>
-            </td>
-            <td>
-              <figure>
-                <img src="/catalog/img2.jpg" width="300" height="200" alt="Увлажняющий кондиционер &quot;BAXTER OF CALIFORNIA&quot;">
-              	<figcaption>Увлажняющий кондиционер &laquo;BAXTER OF CALIFORNIA&raquo;</figcaption>
-              </figure>  
+            </article>
+            <article class="catalog-goods-item">
+              <div class="catalog-goods-item-description">
+                <a href="#"><img src="/catalog/img2.jpg" width="300" height="200" alt="Увлажняющий кондиционер &#171;BAXTER OF CALIFORNIA&#187;"></a>
+                <h2><a href="#">Увлажняющий кондиционер <br>&#171;BAXTER OF CALIFORNIA&#187;</a></h2>
+              </div>  
               <div class="price">
                 <span>750 руб.</span><a href="#">Купить</a>
               </div>
-            </td>
-            <td>
-              <figure>
-                <img src="/catalog/img3.jpg" width="300" height="200" alt="Гель для волос &quot;SUAVECITO&quot;">
-              	<figcaption>Гель для волос &laquo;SUAVECITOA&raquo;</figcaption>
-              </figure>  
+            </article>
+            <article class="catalog-goods-item">
+              <div class="catalog-goods-item-description">
+                <a href="#"><img src="/catalog/img3.jpg" width="300" height="200" alt="Гель для волос &#171;SUAVECITO&#187;"></a>
+                <h2><a href="#">Гель для волос <br>&#171;SUAVECITO&#187;</a></h2>
+              </div>  
               <div class="price">
                 <span>290 руб.</span><a href="#">Купить</a>
               </div>
-            </td>
-          </tr>
-          <tr>  
-            <td>
-              <figure>
-                <img src="/catalog/img4.jpg" width="300" height="200" alt="Глина для укладки волос &quot;AMERICAN CREW&quot;">
-              	<figcaption>Глина для укладки волос &quot;AMERICAN CREW&quot;</figcaption>
-              </figure>  
+            </article>
+            <article class="catalog-goods-item">
+              <div class="catalog-goods-item-description">
+                <a href="#"><img src="/catalog/img4.jpg" width="300" height="200" alt="Глина для укладки волос &#171;AMERICAN CREW&#187;"></a>
+                <h2><a href="#">Глина для укладки волос <br>&#171;AMERICAN CREW&#187;</a></h2>
+              </div>  
               <div class="price">
                 <span>500 руб.</span><a href="#">Купить</a>
               </div>
-            </td>
-            <td>
-              <figure>
-                <img src="/catalog/img5.jpg" width="300" height="200" alt="Гель для волос &quot;AMERICAN CREW&quot;">
-              	<figcaption>Гель для волос &quot;AMERICAN CREW&quot;"</figcaption>
-              </figure>  
+            </article>
+            <article class="catalog-goods-item">
+              <div class="catalog-goods-item-description">
+                <a href="#"><img src="/catalog/img5.jpg" width="300" height="200" alt="Гель для волос &#171;AMERICAN CREW&#187;"></a>
+                <h2><a href="#">Гель для волос <br>&#171;AMERICAN CREW&#187;</a></h2>
+              </div>  
               <div class="price">
                 <span>300 руб.</span><a href="#">Купить</a>
               </div>
-            </td>
-            <td>
-              <figure>
-                <img src="/catalog/img6.jpg" width="300" height="200" alt="Набор для бритья &quot;BAXTER OF CALIFORNIA&quot;">
-              	<figcaption>Набор для бритья &quot;BAXTER OF CALIFORNIA&quot;"</figcaption>
-              </figure>  
+            </article>
+            <article class="catalog-goods-item">
+              <div class="catalog-goods-item-description">
+                <a href="#"><img src="/catalog/img6.jpg" width="300" height="200" alt="Набор для бритья &#171;BAXTER OF CALIFORNIA&#187;"></a>
+                <h2><a href="#">Набор для бритья <br>&#171;BAXTER OF CALIFORNIA&#187;</a></h2>
+              </div>  
               <div class="price">
                 <span>3 900 руб.</span><a href="#">Купить</a>
               </div>
-            </td>
-           </tr>
-        </table> 
-        <div class="catalog-paginator">
-          <a href="#">1</a>
-          <a class="catalog-paginator-selected" href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-        </div> 
+            </article>
+          <div class="catalog-paginator">
+            <a href="#">1</a>
+            <a class="catalog-paginator-selected">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+          </div> 
+        </div>
       </div>	  
     </main>
     <footer class="main-footer">
