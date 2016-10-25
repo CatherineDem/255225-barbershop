@@ -5,39 +5,39 @@
     <title>Барбершоп «Бородинский» - Магазин - Средства для ухода</title>
   </head>
   <body>
-	<header class="main-header">
-    <div class="container">
-      <div class="page-logo">
-        <img src="img/page-logo.png" width="368" height="80" alt="Барбершоп «Бородинский»">
+    <header class="main-header">
+      <div class="container">
+        <div class="page-logo">
+          <img src="img/page-logo.png" width="368" height="80" alt="Барбершоп «Бородинский»">
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li class="selected">
+              <a>Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
       </div>
-      <nav class="main-navigation">
-        <ul>
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Новости</a>
-          </li>
-          <li>
-            <a href="#">Прайс-лист</a>
-          </li>
-          <li class="selected">
-            <a>Магазин</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="user-block">
-        <a class="login" href="#">Вход</a>
-      </div>
-    </div>
-  </header>
+    </header>
     <main class="container">
       <h1 class="main-header">Средства для ухода</h1>
       <ul class="breadcrumb">
-      	<li>
+        <li>
           <a href="#">Главная</a>
         </li>
         <li>
@@ -52,40 +52,40 @@
           <form name="filters" action="/catalog.html" method="get">
             <h3 class="catalog-filters-header">Производители:</h3>
             <div class="wrapper-input">
-            	<input type="checkbox" name="producer-baxter" id="producer-baxter" value="baxter" checked>
+              <input type="checkbox" name="producer-baxter" id="producer-baxter" value="baxter" checked>
               <label for="producer-baxter">Baxter of California</label>
             </div>
             <div class="wrapper-input">
-            	<input type="checkbox" name="producer-mrnatty" id="producer-mrnatty" value="mrnatty">
+              <input type="checkbox" name="producer-mrnatty" id="producer-mrnatty" value="mrnatty">
               <label for="producer-mrnatty">MR Natty</label>
             </div>
             <div class="wrapper-input">
-            	<input type="checkbox" name="producer-suavecito" id="producer-suavecito" value="suavecito" checked>
+              <input type="checkbox" name="producer-suavecito" id="producer-suavecito" value="suavecito" checked>
               <label for="producer-suavecito">Suavecito</label>
             </div>
             <div class="wrapper-input">
-	            <input type="checkbox" name="producer-malingoetz" id="producer-malingoetz" value="malingoetz">
+              <input type="checkbox" name="producer-malingoetz" id="producer-malingoetz" value="malingoetz">
               <label for="producer-malingoetz">Malin+Goetz</label>
             </div>
             <div class="wrapper-input">
-            	<input type="checkbox" name="producer-murrays" id="producer-murrays" value="murrays">
+              <input type="checkbox" name="producer-murrays" id="producer-murrays" value="murrays">
               <label for="producer-murrays">Murray's</label>
             </div>
             <div class="wrapper-input">
-            	<input type="checkbox" name="producer-americancrew" id="producer-americancrew" value="americancrew" checked>
+              <input type="checkbox" name="producer-americancrew" id="producer-americancrew" value="americancrew" checked>
               <label for="producer-americancrew">American Crew</label>
             </div>
             <h3 class="catalog-filters-header">Группы товаров:</h3>
             <div class="wrapper-input">
-            	<input type="radio" name="good-groups" id="good-groups-shaving" value="shaving">
+              <input type="radio" name="good-groups" id="good-groups-shaving" value="shaving">
               <label for="good-groups-shaving">Бритвенные принадлежности</label>
             </div>
             <div class="wrapper-input">
-            	<input type="radio" name="good-groups" id="good-groups-care" value="care" checked>
+              <input type="radio" name="good-groups" id="good-groups-care" value="care" checked>
               <label for="good-groups-care">Средства для ухода</label>
             </div>
             <div class="wrapper-input">
-            	<input type="radio" name="good-groups" id="good-groups-accessories" value="accessories">
+              <input type="radio" name="good-groups" id="good-groups-accessories" value="accessories">
               <label for="good-groups-accessories">Аксессуары</label>
             </div>
             <button type="submit" class="filters-button">Показать</button>
@@ -96,7 +96,7 @@
               <div class="catalog-goods-item-description">
                 <a href="#"><img src="/catalog/img1.jpg" width="300" height="200" alt="Набор для путешествий &#171;BAXTER OF CALIFORNIA&#187;"></a>
                 <!--Согласно спецификации "3.14 Карточка товара: название товара — это ссылка на страницу товара (название состоит из двух строк, но по сути является одним блоком)" - использование <br> в <h2> будет оправдано?-->
-              	<h2 class="catalog-goods-item-header"><a href="#">Набор для путешествий <br>&#171;BAXTER OF CALIFORNIA&#187;</a></h2>
+                <h2 class="catalog-goods-item-header"><a href="#">Набор для путешествий <br>&#171;BAXTER OF CALIFORNIA&#187;</a></h2>
               </div>  
               <div class="price">
                 <span>2 900 руб.</span><a href="#">Купить</a>
@@ -176,5 +176,5 @@
         </div>
       </div>
     </footer>
-  </body>
+	</body>
 </html>
